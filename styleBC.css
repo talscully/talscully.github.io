@@ -24,6 +24,27 @@ p {
   font-size: 17px;
   font-family: "Source Serif Pro", serif
 }
+img {
+  width: 100%;
+}
+.portfolio-item {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+}
+.portfolio-item:hover {
+  opacity: .8;
+  cursor: pointer;
+  color: #99281b;
+}
+.portfolio-dropdown {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+}
+.portfolio-item *, .portfolio-dropdown * {
+  margin: 5px 0 5px 0;
+}
 
 /* Footer */
 .foot {

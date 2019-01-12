@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 10px 100px 20px 100px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+
+/* STYLE OF TABLE */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.itemName, .Name {width: 34%;}
+.itemWeight, .Weight {
+  width: 10%;
+  text-align: center;
+}
+.itemQuantity, .Quantity {
+  width: 35%;
+  text-align: center;
+}
+.itemLocation, .Location {width: 20%;}
+.itemLocation {font-style: italic;}
+
+th {
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #cccccc;
+}
+
+td {
+  border-bottom: 1px solid #cccccc;
+  padding: 10px;
+}
+
+.level1 {font-size: 16px;}
+.level2 {
+  font-size: 15px;
+  background-color: #f6f6f6;
+}
+.level3 {
+  font-size: 14px;
+  background-color: #e8e8e8;
+}
+
+.level2 .itemName {padding-left: 20px;}
+.level3 .itemName {padding-left: 30px;}
+
+
+/* MOVING PANELS AND THINGS */
+#container1_contents {display: none;}
+#container2_contents {display: none;}
+#container3_contents {display: none;}
+
+.level1:hover, .level2:hover, .level3:hover {
+  background-color: #a7d18c;
+  cursor: pointer;
+}
+
+/* Displaying an item's description */
+.itemNotes {
+  display: none;
+  margin: 0;
+  padding: 5px 20px 5px 20px;
+  background-color: #fcffe5;
+  border-left: 1px solid #f4f7d7;
+  border-right: 1px solid #f4f7d7;
+  border-bottom: 1px solid #cccccc;
+}
+.itemNotes p{
+  font-size: 14px;
+}
+.activeItem {
+  background-color: #b8d3a7;
+}
+.close_description_button {
+  color: #777777;
+  font-style: italic;
+}
+.close_description_button:hover {
+  color: #333333;
+  cursor: pointer;
+}
+.itemNotesTable td, th{
+  font-size: 14px;
+  text-align: center;
+}
+.itemNotesTable tr:nth-child(even) {background-color: #eff2da;}
+img {
+  width: 300px;
+  border: solid black 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
