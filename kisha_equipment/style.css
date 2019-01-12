@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   margin: 10px 100px 20px 100px;
 }
 
@@ -29,7 +29,7 @@ table {
 
 th {
   padding: 10px;
-  font-size: 18px;
+  font-size: 22px;
   border-bottom: 2px solid #cccccc;
 }
 
@@ -38,13 +38,13 @@ td {
   padding: 10px;
 }
 
-.level1 {font-size: 16px;}
+.level1 {font-size: 19px;}
 .level2 {
-  font-size: 15px;
+  font-size: 18px;
   background-color: #f6f6f6;
 }
 .level3 {
-  font-size: 14px;
+  font-size: 17px;
   background-color: #e8e8e8;
 }
 
@@ -73,7 +73,7 @@ td {
   border-bottom: 1px solid #cccccc;
 }
 .itemNotes p, .showDescription p {
-  font-size: 14px;
+  font-size: 17px;
 }
 .activeItem {
   background-color: #b8d3a7;
@@ -82,7 +82,7 @@ td {
   display: none;
   margin: 0;
   padding: 2px 20px 2px 20px;
-  background-color: #fcffe5;
+  background-color: #fefff9;
   border-left: 1px solid #f4f7d7;
   border-right: 1px solid #f4f7d7;
   border-bottom: 1px solid #cccccc;
@@ -95,7 +95,7 @@ td {
   cursor: pointer;
 }
 .itemNotesTable td, th{
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
 }
 .itemNotesTable tr:nth-child(even) {background-color: #eff2da;}
