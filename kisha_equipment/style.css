@@ -58,7 +58,7 @@ td {
 #container3_contents {display: none;}
 
 .level1:hover, .level2:hover, .level3:hover {
-  background-color: #a7d18c;
+  /*background-color: #a7d18c;*/
   cursor: pointer;
 }
 
@@ -90,8 +90,8 @@ td {
   font-style: italic;
 }
 .showDescription:hover {
-  background-color: #fefff9;
-  color: #333333;
+  /*background-color: #fefff9;
+  color: #333333;*/
   cursor: pointer;
 }
 .itemNotesTable td, th{
