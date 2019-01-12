@@ -22,11 +22,11 @@ equipment = np.array([
     ("Bag of Holding",15,1,"Belt","500",0,0,"This bag looks like a standard drawstring pouch but has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.<br><br>If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.<br><br>Placing a bag of holding inside an extradimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.<br><br><img src='images/bag_of_holding.png'/>"),
     ("Basket",2,1,"Bag of Holding","40",0,0,"This is large basket has a sturdy lid and can hold up to 2 cubic feet/40 pounds of gear. Currently, it primarily holds cooking supplies."),
     ("Bedroll",7,1,"Bag of Holding","",0,0,"You never know where you're going to sleep, and a bedroll helps you get better sleep in a hayloft or on the cold ground. A bedroll consists of bedding and a blanket thin enough to be rolled up and tied. In an emergency, it can double as a stretcher."),
-    ("Book of Poetry",2,1,"Bag of Holding","",0,0,"This book is filled with traditional Elvish poetry for children."),
+    ("Book of Poetry",2,1,"Bag of Holding","",0,0,"This book is filled with traditional Elvish poetry for children.<br><br><img src='images/book_of_poetry.png'/>"),
     ("Bottled Breath",0.5,1,"Bag of Holding","",0,0,"This bottle contains a breath of elemental air. When you inhale it, you either exhale it or hold it.<br><br>If you exhale the breath, you gain the effect of the gust of wind spell. If you hold the breath, you don't need to breathe for 1 hour, though you can end this benefit early (for example, to speak). Ending it early doesn't give you the benefit of exhaling the breath."),
     ("Clothes, Traveller's",4,1,"Wearing","",0,0,"Belt has a holster for one flask and holsters for 10 darts; other things (pouches, Shanga beads) may be tied to it"),
     ("Coin Pouch",1,1,"Bag of Holding","6",0,0,"This cloth pouch can hold 1/5 cubic foot/ 6 pounds of gear."),
-    ("Cook's Utensils",8,1,"Basket","",0,0,"Cook's utensils include a metal pot, knives, forks, a stirring spoon, and a ladle. Proficiency with Cook's Utensils lets you add your proficiency bonus to any ability checks you make using these tools."),
+    ("Cook's Utensils",8,1,"Basket","",0,0,"Cook's utensils include a metal pot, knives, forks, a stirring spoon, and a ladle. Proficiency with Cook's Utensils lets you add your proficiency bonus to any ability checks you make using these tools.<br><br><img src='images/cooks_utensils.png'/>"),
     ("Coins, Gold Pieces",.02,money[0],"Coin Pouch","",0,0,""),
     ("Coins, Silver Pieces",.02,money[1],"Coin Pouch","",0,0,""),
     ("Coins, Copper Pieces",.02,money[2],"Coin Pouch","",0,0,""),
@@ -137,7 +137,7 @@ def writeItem(item):
 # Write container item to HTML table string
 def writeContainer(item_container, container_num):
     weight_str = '%.1f' % float(item_container[weight])
-    str = '<table><tr class="level'+item_container[level]+'" id="item'+item_container[itemOrder]+'" id="container'+repr(container_num)+'" onclick='+"'"+'$("#container'+repr(container_num)+'_contents").slideToggle();$("#item'+item_container[itemOrder]+'_notes").slideToggle();'+"'"+'>'
+    str = '<table><tr class="level'+item_container[level]+'" id="item'+item_container[itemOrder]+'" id="container'+repr(container_num)+'" onclick='+"'"+'$("#container'+repr(container_num)+'_contents").slideToggle();$("#item'+item_container[itemOrder]+'_showDescription").slideToggle();if(("#item'+item_container[itemOrder]+'_notes:visible").length!=0){$("#item'+item_container[itemOrder]+'_notes").slideUp();}'+"'"+'>'
     str = str + '<td class="itemName">'+item_container[name]+' <em>[container]</em></td><td class="itemWeight">'+weight_str+' lb.</td><td class="itemQuantity">'+'--'+'</td><td class="itemLocation">'+item_container[location]+'</td></tr></table>'
 
     # Calculate contained weight
@@ -147,10 +147,11 @@ def writeContainer(item_container, container_num):
             iItem_weight = float(iItem[weight]) * float(iItem[quantity])
             contained_weight += iItem_weight
 
+    # div for "Show description"
+    str = str + '\t\t<div class="showDescription" id="item'+item_container[itemOrder]+'_showDescription" onclick='+"'"+'$("#item'+item_container[itemOrder]+'_notes").slideToggle();'+"'"+'><p>Toggle container description</p></div>'
     # div for item notes
     str = str + '\t\t<div class="itemNotes" id="item'+item_container[itemOrder]+'_notes">'
     # option to close container description
-    str = str + '<p class="close_description_button" onclick='+"'"+'$("#item'+item_container[itemOrder]+'_notes").slideToggle();'+"'"+'>[Close description]</p>'
     contained_weight_str = '%.1f' % contained_weight
     str = str + '<p>Contains '+contained_weight_str+' lb. of items (max: '+item_container[container_capacity]+' lb.)</p>'
     str = str + '<p>'+item_container[notes]+'</p></div>'

@@ -72,17 +72,25 @@ td {
   border-right: 1px solid #f4f7d7;
   border-bottom: 1px solid #cccccc;
 }
-.itemNotes p{
+.itemNotes p, .showDescription p {
   font-size: 14px;
 }
 .activeItem {
   background-color: #b8d3a7;
 }
-.close_description_button {
+.showDescription {
+  display: none;
+  margin: 0;
+  padding: 2px 20px 2px 20px;
+  background-color: #fcffe5;
+  border-left: 1px solid #f4f7d7;
+  border-right: 1px solid #f4f7d7;
+  border-bottom: 1px solid #cccccc;
   color: #777777;
   font-style: italic;
 }
-.close_description_button:hover {
+.showDescription:hover {
+  background-color: #fefff9;
   color: #333333;
   cursor: pointer;
 }
