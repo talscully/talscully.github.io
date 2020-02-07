@@ -1,0 +1,18 @@
+.container{
+    width: 90%;
+}
+
+/* Navigation bar */
+
+/* Triangle buttons */
+.btn-xl {
+    padding: 15px 25px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.btn-up-arrow {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Angles table */
