@@ -22,7 +22,8 @@
 /* Main */
 p {
   font-size: 17px;
-  font-family: "Source Serif Pro", serif
+  font-family: "Source Serif Pro", serif;
+  color: #333333;
 }
 img {
   width: 100%;
@@ -44,6 +45,9 @@ img {
 }
 .portfolio-item *, .portfolio-dropdown * {
   margin: 5px 0 5px 0;
+}
+.invisible_link {
+  color: #333333;
 }
 
 /* Footer */
