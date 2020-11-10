@@ -15,9 +15,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="styleBC.css">
+        <script src="script.js"></script>
     </head>
 
-    <body>
+    <body onload="onPageLoad()">
 
         <div class="full-page">
 
@@ -25,9 +26,9 @@
                 <div class="col-xs-5 padding-0"></div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 1 -->
-                    <a href="#" data-toggle="dropdown"><h1>1</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>1</h1><img id="day1_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 1 . . .</p>
+                        <p id="day1_text">This mystery item will not be revealed until December 1 . . .</p>
                     </div>
                     <!----------->
                 </div>
@@ -38,17 +39,17 @@
                 <div class="col-xs-4 padding-0"></div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 2 -->
-                    <a href="#" data-toggle="dropdown"><h1>2</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>2</h1><img id="day2_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 2 . . .</p>
+                        <p id="day2_text">This mystery item will not be revealed until December 2 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 3 -->
-                    <a href="#" data-toggle="dropdown"><h1>3</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>3</h1><img id="day3_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 3 . . .</p>
+                        <p id="day3_text">This mystery item will not be revealed until December 3 . . .</p>
                     </div>
                     <!----------->
                 </div>
@@ -59,25 +60,25 @@
                 <div class="col-xs-3 padding-0"></div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 4 -->
-                    <a href="#" data-toggle="dropdown"><h1>4</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>4</h1><img id="day4_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 4 . . .</p>
+                        <p id="day4_text">This mystery item will not be revealed until December 4 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 5 -->
-                    <a href="#" data-toggle="dropdown"><h1>5</h1><img src="images/orb_weekend.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>5</h1><img id="day5_img" src="images/orb_weekend.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 5 . . .</p>
+                        <p id="day5_text">This mystery item will not be revealed until December 5 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 6 -->
-                    <a href="#" data-toggle="dropdown"><h1>6</h1><img src="images/orb_weekend.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>6</h1><img id="day6_img" src="images/orb_weekend.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 6 . . .</p>
+                        <p id="day6_text">This mystery item will not be revealed until December 6 . . .</p>
                     </div>
                     <!----------->
                 </div>
@@ -88,33 +89,33 @@
                 <div class="col-xs-2 padding-0"></div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 7 -->
-                    <a href="#" data-toggle="dropdown"><h1>7</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>7</h1><img id="day7_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 7 . . .</p>
+                        <p id="day7_text">This mystery item will not be revealed until December 7 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 8 -->
-                    <a href="#" data-toggle="dropdown"><h1>8</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>8</h1><img id="day8_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 8 . . .</p>
+                        <p id="day8_text">This mystery item will not be revealed until December 8 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 9 -->
-                    <a href="#" data-toggle="dropdown"><h1>9</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>9</h1><img id="day9_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 9 . . .</p>
+                        <p id="day9_text">This mystery item will not be revealed until December 9 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 10 -->
-                    <a href="#" data-toggle="dropdown"><h1>10</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>10</h1><img id="day10_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 10 . . .</p>
+                        <p id="day10_text">This mystery item will not be revealed until December 10 . . .</p>
                     </div>
                     <!----------->
                 </div>
@@ -125,33 +126,33 @@
                 <div class="col-xs-2 padding-0"></div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 11 -->
-                    <a href="#" data-toggle="dropdown"><h1>11</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>11</h1><img id="day11_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 11 . . .</p>
+                        <p id="day11_text">This mystery item will not be revealed until December 11 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 12 -->
-                    <a href="#" data-toggle="dropdown"><h1>12</h1><img src="images/orb_weekend.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>12</h1><img id="day12_img" src="images/orb_weekend.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 12 . . .</p>
+                        <p id="day12_text">This mystery item will not be revealed until December 12 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 13 -->
-                    <a href="#" data-toggle="dropdown"><h1>13</h1><img src="images/orb_weekend.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>13</h1><img id="day13_img" src="images/orb_weekend.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 13 . . .</p>
+                        <p id="day13_text">This mystery item will not be revealed until December 13 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 14 -->
-                    <a href="#" data-toggle="dropdown"><h1>14</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>14</h1><img id="day14_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 14 . . .</p>
+                        <p id="day14_text">This mystery item will not be revealed until December 14 . . .</p>
                     </div>
                     <!----------->
                 </div>
@@ -162,41 +163,41 @@
                 <div class="col-xs-1 padding-0"></div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 15 -->
-                    <a href="#" data-toggle="dropdown"><h1>15</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>15</h1><img id="day15_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 15 . . .</p>
+                        <p id="day15_text">This mystery item will not be revealed until December 15 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 16 -->
-                    <a href="#" data-toggle="dropdown"><h1>16</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>16</h1><img id="day16_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 16 . . .</p>
+                        <p id="day16_text">This mystery item will not be revealed until December 16 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 17 -->
-                    <a href="#" data-toggle="dropdown"><h1>17</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>17</h1><img id="day17_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 17 . . .</p>
+                        <p id="day17_text">This mystery item will not be revealed until December 17 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 18 -->
-                    <a href="#" data-toggle="dropdown"><h1>18</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>18</h1><img id="day18_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 18 . . .</p>
+                        <p id="day18_text">This mystery item will not be revealed until December 18 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 19 -->
-                    <a href="#" data-toggle="dropdown"><h1>19</h1><img src="images/orb_weekend.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>19</h1><img id="day19_img" src="images/orb_weekend.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 19 . . .</p>
+                        <p id="day19_text">This mystery item will not be revealed until December 19 . . .</p>
                     </div>
                     <!----------->
                 </div>
@@ -206,49 +207,49 @@
             <div class="container calendar-row">
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 20 -->
-                    <a href="#" data-toggle="dropdown"><h1>20</h1><img src="images/orb_weekend.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>20</h1><img id="day20_img" src="images/orb_weekend.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 20 . . .</p>
+                        <p id="day20_text">This mystery item will not be revealed until December 20 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 21 -->
-                    <a href="#" data-toggle="dropdown"><h1>21</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>21</h1><img id="day21_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 21 . . .</p>
+                        <p id="day21_text">This mystery item will not be revealed until December 21 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 22 -->
-                    <a href="#" data-toggle="dropdown"><h1>22</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>22</h1><img id="day22_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 22 . . .</p>
+                        <p id="day22_text">This mystery item will not be revealed until December 22 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 23 -->
-                    <a href="#" data-toggle="dropdown"><h1>23</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>23</h1><img id="day23_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 23 . . .</p>
+                        <p id="day23_text">This mystery item will not be revealed until December 23 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 24 -->
-                    <a href="#" data-toggle="dropdown"><h1>24</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>24</h1><img id="day24_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 24 . . .</p>
+                        <p id="day24_text">This mystery item will not be revealed until December 24 . . .</p>
                     </div>
                     <!----------->
                 </div>
                 <div class="col-xs-2 padding-0">
                     <!-- DAY 25 -->
-                    <a href="#" data-toggle="dropdown"><h1>25</h1><img src="images/orb.png"/></a>
+                    <a href="#" data-toggle="dropdown"><h1>25</h1><img id="day25_img" src="images/orb.png"/></a>
                     <div class="dropdown-menu item-description">
-                        <p>This mystery item will not be revealed until December 25 . . .</p>
+                        <p id="day25_text">This mystery item will not be revealed until December 25 . . .</p>
                     </div>
                     <!----------->
                 </div>
