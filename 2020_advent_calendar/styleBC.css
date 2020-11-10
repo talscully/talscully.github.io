@@ -1,0 +1,47 @@
+.container{
+    width: 500px;
+}
+
+.full-page{
+    background-color: rgb(8,30,63);
+    background-image: url('images/background.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    padding-top: 50px;
+}
+
+/* Calendar days */
+.calendar-row{
+    height:70px;;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+.calendar-row a{
+    text-decoration: none;
+    text-align: center;
+    color: #eeeeee;
+}
+.calendar-row a:hover{
+    color:#fff239;
+}
+.calendar-row img{
+    width: 30px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty{
+    height:100px;;
+}
+
+/* Item decriptions */
+.item-description{
+    padding: 5px 5px 0px 6px;
+    font-size: 13px;
+}
