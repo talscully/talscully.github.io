@@ -34,10 +34,11 @@ html, body {
     color:#fff239;
 }
 .calendar-row img{
-    width: 30px;
+    width: 45px;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -7px;
 }
 
 .empty{
