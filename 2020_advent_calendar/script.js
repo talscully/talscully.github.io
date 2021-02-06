@@ -1,7 +1,7 @@
 function onPageLoad() {
 
     this_date = new Date();
-    this_day =this_date.getDate();
+    this_day = this_date.getDate();
     this_month = this_date.getMonth()+1;
 
     var activities = [
