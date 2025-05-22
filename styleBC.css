@@ -49,6 +49,10 @@ img {
 .invisible_link {
   color: #333333;
 }
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* Footer */
 .foot {
