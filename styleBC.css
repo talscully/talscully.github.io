@@ -6,6 +6,7 @@
 .navbar {
   border-top: 4px solid #333333;
   border-bottom: 1px solid #ddd;
+  border-radius: 0px;
   background-color: white;
   padding: 5px 0 5px 0;
 }
@@ -22,11 +23,16 @@
 /* Main */
 p {
   font-size: 17px;
-  font-family: "Source Serif Pro", serif;
+  font-family: "Source Serif 4", serif;
   color: #333333;
 }
 img {
   width: 100%;
+}
+h3 {
+  margin-top: 28px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #969696;
 }
 .portfolio-item {
   padding: 10px;
